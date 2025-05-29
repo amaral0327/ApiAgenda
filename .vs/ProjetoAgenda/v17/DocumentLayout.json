@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ApiAgenda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\ValuesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Migrations\\20250510193341_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\BarbeirosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Barbeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\ValuesController.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\ValuesController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T22:17:57.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250510193341_Inicial.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Migrations\\20250510193341_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Migrations\\20250510193341_Inicial.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Migrations\\20250510193341_Inicial.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Migrations\\20250510193341_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T19:33:42.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BarbeirosController.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\BarbeirosController.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\BarbeirosController.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\BarbeirosController.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Controllers\\BarbeirosController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwB8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:53:25.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\appsettings.json",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\appsettings.json",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-08T17:48:22.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Program.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Program.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:42:52.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Data\\AppDbContext.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:23:47.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Agendamento.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Agendamento.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Models\\Agendamento.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Agendamento.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Models\\Agendamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:22:54.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Models\\Cliente.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Cliente.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:22:44.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Barbeiro.cs",
+              "DocumentMoniker": "E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Barbeiro.cs",
+              "RelativeDocumentMoniker": "..\\ProjetoAgenda\\ProjetoAgenda\\Models\\Barbeiro.cs",
+              "ToolTip": "E:\\ProjetoAgenda\\ProjetoAgenda\\Models\\Barbeiro.cs",
+              "RelativeToolTip": "..\\ProjetoAgenda\\ProjetoAgenda\\Models\\Barbeiro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T17:22:31.373Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
