@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Hc/V40gPg8=",
+  "dgSpecHash": "cPHKYj8mSDI=",
   "success": true,
-  "projectFilePath": "E:\\ProjetoAgenda\\ProjetoAgenda\\ProjetoAgenda.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Documentos\\Projetos\\ApiAgenda\\Api\\ProjetoAgenda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
