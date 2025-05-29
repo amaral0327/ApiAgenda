@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Api",
+    "\\Api\\Controllers"
   ],
+  "SelectedNode": "\\Api\\Controllers\\AgendamentoController.cs",
   "PreviewInSolutionExplorer": false
 }
