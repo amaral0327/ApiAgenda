@@ -89,5 +89,20 @@ namespace ProjetoAgenda.Controllers
 
             return NoContent();
         }
+
+        [HttpPatch("{id}/comparecimento")]
+        public async Task<IActionResult> MarcarComparecimento(int id, [FromBody] bool compareceu)
+        {
+            var agendamento = await _context.Agendamentos.FindAsync(id);
+            if (agendamento == null)
+            {
+                return NotFound();
+            }
+
+            agendamento.Compareceu = compareceu;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }

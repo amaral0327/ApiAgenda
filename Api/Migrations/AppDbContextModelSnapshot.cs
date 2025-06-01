@@ -39,8 +39,14 @@ namespace ProjetoAgenda.Migrations
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("Compareceu")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("DataHora")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Observacoes")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -60,7 +66,6 @@ namespace ProjetoAgenda.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Especialidade")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
@@ -74,21 +79,22 @@ namespace ProjetoAgenda.Migrations
 
             modelBuilder.Entity("ProjetoAgenda.Models.Cliente", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Observacoes")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("Clientes");
                 });

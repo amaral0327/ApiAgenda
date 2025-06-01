@@ -6,7 +6,7 @@ namespace ProjetoAgenda.Models
     {
         public int Id { get; set; }
 
-         //Relações
+        //Relações
         public int ClienteId { get; set; }
         public required Cliente Cliente { get; set; }
 
@@ -15,6 +15,7 @@ namespace ProjetoAgenda.Models
 
         public DateTime DataHora { get; set; }
         public string? Observacoes { get; set; }
-         
+
+        public bool Compareceu { get; set; } = false;
     }
 }
