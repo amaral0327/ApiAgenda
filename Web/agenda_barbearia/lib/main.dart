@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'models/agendamento.dart';
+import 'screens/cadastrar_barbeiro.dart';
 
 void main() {
   runApp(const AgendaBarbeariaApp());
@@ -36,69 +37,68 @@ class _TelaAgendamentoState extends State<TelaAgendamento> {
   String observacao = '';
   DateTime? dataHora;
 
-void _selecionarDataHora() async {
-  final data = await showDatePicker(
-    context: context,
-    initialDate: DateTime.now(),
-    firstDate: DateTime.now(),
-    lastDate: DateTime.now().add(const Duration(days: 30)),
-  );
-
-  if (!mounted) return; // <- Adicione isso
-
-  if (data != null) {
-    final hora = await showTimePicker(
+  void _selecionarDataHora() async {
+    final data = await showDatePicker(
       context: context,
-      initialTime: TimeOfDay.now(),
+      initialDate: DateTime.now(),
+      firstDate: DateTime.now(),
+      lastDate: DateTime.now().add(const Duration(days: 30)),
     );
 
-    if (!mounted) return; // <- Adicione isso também
+    if (!mounted) return;
 
-    if (hora != null) {
-      setState(() {
-        dataHora = DateTime(data.year, data.month, data.day, hora.hour, hora.minute);
-      });
+    if (data != null) {
+      final hora = await showTimePicker(
+        context: context,
+        initialTime: TimeOfDay.now(),
+      );
+
+      if (!mounted) return;
+
+      if (hora != null) {
+        setState(() {
+          dataHora = DateTime(data.year, data.month, data.day, hora.hour, hora.minute);
+        });
+      }
     }
   }
-}
 
-void _enviarAgendamento() async {
-  if (_formKey.currentState!.validate() && dataHora != null) {
-    final agendamento = Agendamento(
-      dataHora: dataHora!,
-      observacao: observacao,
-      clienteId: 1,   // por enquanto, use ID fixo para testes
-      barbeiroId: 1,  // por enquanto, use ID fixo para testes
-    );
+  void _enviarAgendamento() async {
+    if (_formKey.currentState!.validate() && dataHora != null) {
+      final agendamento = Agendamento(
+        dataHora: dataHora!,
+        observacao: observacao,
+        clienteId: 1,   // por enquanto, use ID fixo para testes
+        barbeiroId: 1,  // por enquanto, use ID fixo para testes
+      );
 
-    final url = Uri.parse('http://localhost:5000/api/agendamentos'); // use o IP local se for rodar no celular
-    final headers = {'Content-Type': 'application/json'};
-    final body = jsonEncode(agendamento.toJson());
+      final url = Uri.parse('http://localhost:5099/api/agendamentos');
+      final headers = {'Content-Type': 'application/json'};
+      final body = jsonEncode(agendamento.toJson());
 
-    try {
-      final response = await http.post(url, headers: headers, body: body);
+      try {
+        final response = await http.post(url, headers: headers, body: body);
 
-      if (response.statusCode == 201 || response.statusCode == 200) {
+        if (response.statusCode == 201 || response.statusCode == 200) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Agendamento enviado com sucesso!')),
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Erro: ${response.statusCode}')),
+          );
+        }
+      } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Agendamento enviado com sucesso!')),
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erro: ${response.statusCode}')),
+          const SnackBar(content: Text('Erro ao conectar com a API')),
         );
       }
-    } catch (e) {
+    } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Erro ao conectar com a API')),
+        const SnackBar(content: Text('Preencha todos os campos')),
       );
     }
-  } else {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Preencha todos os campos')),
-    );
   }
-}
-
 
   @override
   Widget build(BuildContext context) {
@@ -137,6 +137,16 @@ void _enviarAgendamento() async {
               ElevatedButton(
                 onPressed: _enviarAgendamento,
                 child: const Text('Agendar'),
+              ),
+              const SizedBox(height: 16),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const CadastrarBarbeiro()),
+                  );
+                },
+                child: const Text('Cadastrar Barbeiro'),
               ),
             ],
           ),

@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Agendamento": {
+    "/api/Agendamentos": {
       "get": {
         "tags": [
-          "Agendamento"
+          "Agendamentos"
         ],
         "responses": {
           "200": {
@@ -44,7 +44,7 @@
       },
       "post": {
         "tags": [
-          "Agendamento"
+          "Agendamentos"
         ],
         "requestBody": {
           "content": {
@@ -89,10 +89,10 @@
         }
       }
     },
-    "/api/Agendamento/{id}": {
+    "/api/Agendamentos/{id}": {
       "get": {
         "tags": [
-          "Agendamento"
+          "Agendamentos"
         ],
         "parameters": [
           {
@@ -130,7 +130,7 @@
       },
       "put": {
         "tags": [
-          "Agendamento"
+          "Agendamentos"
         ],
         "parameters": [
           {
@@ -170,7 +170,7 @@
       },
       "delete": {
         "tags": [
-          "Agendamento"
+          "Agendamentos"
         ],
         "parameters": [
           {
@@ -190,10 +190,10 @@
         }
       }
     },
-    "/api/Agendamento/{id}/comparecimento": {
+    "/api/Agendamentos/{id}/comparecimento": {
       "patch": {
         "tags": [
-          "Agendamento"
+          "Agendamentos"
         ],
         "parameters": [
           {

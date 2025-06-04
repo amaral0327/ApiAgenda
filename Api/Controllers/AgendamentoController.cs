@@ -7,16 +7,16 @@ namespace ProjetoAgenda.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AgendamentoController : ControllerBase
+    public class AgendamentosController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public AgendamentoController(AppDbContext context)
+        public AgendamentosController(AppDbContext context)
         {
             _context = context;
         }
 
-        //GET: api/Agendamentos
+        // GET: api/Agendamentos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Agendamento>>> GetAgendamentos()
         {
@@ -26,7 +26,7 @@ namespace ProjetoAgenda.Controllers
                 .ToListAsync();
         }
 
-        //GET: api/Agendamento/5
+        // GET: api/Agendamentos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Agendamento>> GetAgendamento(int id)
         {
@@ -49,10 +49,9 @@ namespace ProjetoAgenda.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetAgendamento), new { id = agendamento.Id }, agendamento);
-
         }
 
-        // PUT: api/Agendamento/5
+        // PUT: api/Agendamentos/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAgendamento(int id, Agendamento agendamento)
         {
@@ -90,14 +89,13 @@ namespace ProjetoAgenda.Controllers
             return NoContent();
         }
 
+        // PATCH: api/Agendamentos/5/comparecimento
         [HttpPatch("{id}/comparecimento")]
         public async Task<IActionResult> MarcarComparecimento(int id, [FromBody] bool compareceu)
         {
             var agendamento = await _context.Agendamentos.FindAsync(id);
             if (agendamento == null)
-            {
                 return NotFound();
-            }
 
             agendamento.Compareceu = compareceu;
             await _context.SaveChangesAsync();

@@ -18,5 +18,7 @@ class Agendamento {
       'clienteId': clienteId,
       'barbeiroId': barbeiroId,
     };
+    
   }
 }
+

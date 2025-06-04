@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "ProjetoAgenda.Controllers.AgendamentoController",
+    "ContainingType": "ProjetoAgenda.Controllers.AgendamentosController",
     "Method": "GetAgendamentos",
-    "RelativePath": "api/Agendamento",
+    "RelativePath": "api/Agendamentos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "ProjetoAgenda.Controllers.AgendamentoController",
+    "ContainingType": "ProjetoAgenda.Controllers.AgendamentosController",
     "Method": "PostAgendamento",
-    "RelativePath": "api/Agendamento",
+    "RelativePath": "api/Agendamentos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "ProjetoAgenda.Controllers.AgendamentoController",
+    "ContainingType": "ProjetoAgenda.Controllers.AgendamentosController",
     "Method": "GetAgendamento",
-    "RelativePath": "api/Agendamento/{id}",
+    "RelativePath": "api/Agendamentos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "ProjetoAgenda.Controllers.AgendamentoController",
+    "ContainingType": "ProjetoAgenda.Controllers.AgendamentosController",
     "Method": "PutAgendamento",
-    "RelativePath": "api/Agendamento/{id}",
+    "RelativePath": "api/Agendamentos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -93,9 +93,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoAgenda.Controllers.AgendamentoController",
+    "ContainingType": "ProjetoAgenda.Controllers.AgendamentosController",
     "Method": "DeleteAgendamento",
-    "RelativePath": "api/Agendamento/{id}",
+    "RelativePath": "api/Agendamentos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,9 +109,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoAgenda.Controllers.AgendamentoController",
+    "ContainingType": "ProjetoAgenda.Controllers.AgendamentosController",
     "Method": "MarcarComparecimento",
-    "RelativePath": "api/Agendamento/{id}/comparecimento",
+    "RelativePath": "api/Agendamentos/{id}/comparecimento",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
